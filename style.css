@@ -1,0 +1,280 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Top Contact Bar */
+.top-bar {
+    background-color: #002147;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-bar p {
+    margin: 0;
+}
+
+.social-icons img {
+    width: 24px;
+    margin-left: 10px;
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 24px;
+    color: #002147;
+    margin-bottom: 5px;
+}
+
+.header-text h2 {
+    font-size: 18px;
+    color: #007bff;
+}
+
+.header-ad img {
+    max-width: 250px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #002147;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #f0ad4e;
+}
+
+/* Image Slider */
+/* Slider Styles */
+.slider {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.active-slide {
+    display: block;
+}
+
+/* Add navigation arrows if needed */
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+
+/* ============================ */
+
+/* Footer Styles */
+footer {
+    background-color: #2d2d2d;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f0ad4e;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: #f0ad4e;
+}
+
+.footer-column .social-icons {
+    margin-top: 10px;
+}
+
+.footer-column .social-icons a {
+    margin-right: 15px;
+}
+
+.footer-column .social-icons img {
+    width: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Square+Peg&family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.nyws {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(https://i.ibb.co.com/5sbqs0d/NYSWFBANER.jpg) no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.container {
+    margin: 5rem auto;
+    text-align: center;
+}
+
+p {
+    color: #b7b2b2;
+    padding: 10px 0 35px 0;
+}
+
+.ww li {
+    color: #fff;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px;
+    list-style: none;
+    width: 21%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.ww li span {
+    display: block;
+    font-size: 3rem;
+}
+
+.count-down {
+    color: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+    li {
+        font-size: 14px;
+    }
+    li span {
+        font-size: 2rem;
+    }
+}
+
+
+
+/* ============================== */
+

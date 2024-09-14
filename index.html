@@ -1,10 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>নয়নপুর যুব সমাজ কল্যাণ ফাউন্ডেশন</title>
     <link rel="icon" href="https://i.ibb.co.com/whb5wj2/nywsf.png" sizes="48x48">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -35,20 +44,20 @@
     <!-- Navigation Bar -->
     <nav>
         <ul>
-            <li><a href="#">হোম</a></li>
-            <li><a href="#">আমাদের নয়নপুর</a></li>
-            <li><a href="#">আমাদের সম্পর্কে</a></li>
-            <li><a href="#">কমিটি</a></li>
-            <li><a href="#">সদস্যবৃন্দ</a></li>
-            <li><a href="#">প্রকল্পসমূহ</a></li>
-            <li><a href="#">মিডিয়া</a></li>
-            <li><a href="#">যোগাযোগ</a></li>
+            <li><a href="#" onclick="showMember('home'); return false;">হোম</a></li>
+            <li><a href="#" onclick="showMember('noyon'); return false;">আমাদের নয়নপুর</a></li>
+            <li><a href="#" onclick="showMember('about'); return false;">আমাদের সম্পর্কে</a></li>
+            <li><a href="#" onclick="showMember('committe'); return false;">কমিটি</a></li>
+            <li><a href="#" onclick="showMember('member'); return false;">সদস্যবৃন্দ</a></li>
+            <li><a href="#" onclick="showMember('membership'); return false;">প্রকল্পসমূহ</a></li>
+            <li><a href="#" onclick="showMember('gelary'); return false;">মিডিয়া</a></li>
+            <li><a href="#" onclick="showMember('dash'); return false;">যোগাযোগ</a></li>
         </ul>
     </nav>
 
     <!-- Image Slider -->
-    <main>
-        <section class="nyws">
+    
+        <section class="nyws" id="home">
             <div class="container">
                 <div class="coming-soon">
                     <h1>শীঘ্রই আসছে</h1>
@@ -66,7 +75,7 @@
         </section>
     </main>
     
-    <section class="mission"  style="Display:none"
+    <section class="mission" id="about">
         <h3>লক্ষ্য ও উদ্দেশ্য</h3>
         <p>নয়নপুর যুব সমাজ কল্যাণ ফাউন্ডেশন একটি অরাজনৈতিক, জনকল্যাণমূলক, সামাজিক ও সাংস্কৃতিক সংগঠন হিসাবে স্থানীয় জনগণের বৃহত্তর কল্যাণে কাজ করবে। এই ফাউন্ডেশনের মূল উদ্দেশ্য হলো সমাজের কল্যাণমূলক কার্যক্রম পরিচালনা করা, যা আমাদের সদস্যদের মধ্যে ঐক্য ও পারস্পরিক সহযোগিতার মাধ্যমে বাস্তবায়িত হবে। </p>
 
@@ -113,7 +122,7 @@
         </ol>
     </section>
 
-    <section class="membership" style="Display:none">
+    <section class="membership" id="membership">
         <h3>সদস্যপদ ও শ্রেণীবিভাজন:</h3>
         <h4>সাধারণ সদস্য:</h4>
         <ul>
@@ -140,7 +149,7 @@
             <li>পৃষ্ঠপোষকদের ভোটাধিকার থাকবে না।</li>
         </ul>
     </section>
-    <section class="slider" style="display:none">
+    <section class="slider" id="gelary">
         <div class="slider-container">
             <div class="slide">
                 <img src="https://i.ibb.co.com/whb5wj2/nywsf.png" alt="Image 1">
@@ -153,7 +162,51 @@
             </div>
         </div>
     </section>
-
+    <section id="committe">
+                    <p class="test">কার্যনির্বাহী কমিটি - (২০২3-২০২৪)​</p>
+            <table id="data-table" width='100%'>
+                <thead>
+                  <tr>
+                   <th>ক্রমিক নং</th>
+                    <th>নাম</th>
+                    <th>পদবী</th>
+                    <th>মোবাইল নাম্বার</th>
+                    <th>ছবি</th>
+                    <th>রক্তের গ্রুপ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be populated here -->
+                </tbody>
+              </table>
+    </section>
+    <section id="dash">
+                    <p class="test">নয়নপুর যুব সমাজ কল্যাণ ফাউন্ডেশন!</p>
+            <table id="datatableD" width='100%'>
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                <th>Amount</th>
+                <th>January</th>
+                <th>February</th>
+                <th>March</th>
+                <th>April</th>
+                <th>May</th>
+                <th>June</th>
+                <th>July</th>
+                <th>August</th>
+                <th>September</th>
+                <th>October</th>
+                <th>November</th>
+                <th>December</th>
+                <th>Total</th>  
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Data will be populated here -->
+                </tbody>
+              </table>
+    </section>
     <!-- Footer Section -->
     <footer>
         <div class="footer-container">
@@ -197,7 +250,215 @@
             <p>© ২০২৩ সমস্ত অধিকার সংরক্ষিত নয়নপুর যুব সমাজ কল্যাণ ফাউন্ডেশন।</p>
         </div>
     </footer>
+    <script type="module">
+    // Import the functions you need from the Firebase SDK
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-app.js";
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/9.1.2/firebase-firestore.js";
 
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+          apiKey: "AIzaSyB67_Mn3b_2kNvzq3gQv2IbxAqOXb_denA",
+          authDomain: "noyonpur-afbda.firebaseapp.com",
+          projectId: "noyonpur-afbda",
+          storageBucket: "noyonpur-afbda.appspot.com",
+          messagingSenderId: "1091403233287",
+          appId: "1:1091403233287:web:5cd499bbd0247298a852a2"
+        };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    // Function to fetch Firestore data and render to HTML table
+        // Function to format date to dd-mmm-yy
+function formatDate(dateStr) {
+    const options = { day: '2-digit', month: 'short', year: '2-digit' };
+    const date = new Date(dateStr);
+    return date.toLocaleDateString('en-BG', options);
+}
+
+// Function to fetch Firestore data and render to HTML table
+async function fetchFirestoreData() {
+    const querySnapshot = await getDocs(collection(db, "Committee"));
+    const dataTable = document.getElementById("data-table");
+
+    querySnapshot.forEach((doc) => {
+        const data = doc.data();
+        const row = dataTable.insertRow();
+        
+        // Insert cells for all required fields
+        const cell1 = row.insertCell(0);  // name
+        const cell2 = row.insertCell(1);  // position
+        const cell3 = row.insertCell(2);  // number
+        const cell4 = row.insertCell(3);  // img
+        const cell5 = row.insertCell(4);  // img
+        const cell6 = row.insertCell(5);  // img
+
+        cell1.textContent = data.no || "";
+        cell2.textContent = data.name || "";
+        cell3.textContent = data.position || "";
+        cell6.textContent = data.bloodG || "";
+        cell4.innerHTML = '';
+        if (data.phone) {
+            // Create a link element
+            const callLink = document.createElement('a');
+            callLink.href = `tel:+880${data.phone}`;
+            callLink.style.textDecoration = 'none'; // Remove underline from the link
+            callLink.style.color = 'black'; // Set link color
+        
+            // Set the text for the link
+            callLink.textContent = `+880 ${data.phone}`;
+        
+            // Add the link to the cell
+            cell4.appendChild(callLink);
+        } else {
+            cell4.textContent = ""; // Clear the cell content if no phone number
+        };
+
+
+// Handle image URLs
+if (data.imageUrl) {
+    const img = document.createElement('img');
+    img.src = data.imageUrl; // Assuming data.imageUrl is a valid image URL
+    img.alt = 'File Image';
+    img.style.width = '100%'; // Make the image fill the cell width
+    img.style.height = '100%'; // Make the image fill the cell height
+    img.style.objectFit = 'cover'; // Ensure the image covers the cell without distortion
+    img.style.cursor = 'pointer'; // Change cursor to pointer for clickable effect
+    cell5.appendChild(img);
+} else {
+    cell5.textContent = ""; // Clear the cell content if no image URL
+};
+    });
+}
+
+        // Function to fetch Firestore data and render to HTML table with Grand Total
+async function fetchFirestoreDatax() {
+    const querySnapshot = await getDocs(collection(db, "PaymentDash"));
+    const dataTable = document.getElementById("datatableD");
+
+    let grandTotal = {
+        Amount: 0,
+        January: 0,
+        February: 0,
+        March: 0,
+        April: 0,
+        May: 0,
+        June: 0,
+        July: 0,
+        August: 0,
+        September: 0,
+        October: 0,
+        November: 0,
+        December: 0,
+        Total: 0
+    };
+
+    querySnapshot.forEach((doc) => {
+        const data = doc.data();
+        const row = dataTable.insertRow();
+        
+        // Insert cells for all required fields
+        const cell1 = row.insertCell(0);  // name
+        const cell2 = row.insertCell(1);  // Amount
+        const cell3 = row.insertCell(2);  // January
+        const cell4 = row.insertCell(3);  // February
+        const cell5 = row.insertCell(4);  // March
+        const cell6 = row.insertCell(5);  // April
+        const cell7 = row.insertCell(6);  // May
+        const cell8 = row.insertCell(7);  // June
+        const cell9 = row.insertCell(8);  // July
+        const cell10 = row.insertCell(9);  // August
+        const cell11 = row.insertCell(10);  // September
+        const cell12 = row.insertCell(11);  // October
+        const cell13 = row.insertCell(12);  // November
+        const cell14 = row.insertCell(13);  // December
+        const cell15 = row.insertCell(14);  // Total
+
+        // Populate the row with data
+        cell1.textContent = data.Name;
+        cell2.textContent = data.Amount;
+        cell3.textContent = data.January;
+        cell4.textContent = data.February;
+        cell5.textContent = data.March;
+        cell6.textContent = data.April;
+        cell7.textContent = data.May;
+        cell8.textContent = data.June;
+        cell9.textContent = data.July;
+        cell10.textContent = data.August;
+        cell11.textContent = data.September;
+        cell12.textContent = data.October;
+        cell13.textContent = data.November;
+        cell14.textContent = data.December;
+        cell15.textContent = data.Total;
+
+        // Update grand total for each field
+        grandTotal.Amount += parseFloat(data.Amount) || 0;
+        grandTotal.January += parseFloat(data.January) || 0;
+        grandTotal.February += parseFloat(data.February) || 0;
+        grandTotal.March += parseFloat(data.March) || 0;
+        grandTotal.April += parseFloat(data.April) || 0;
+        grandTotal.May += parseFloat(data.May) || 0;
+        grandTotal.June += parseFloat(data.June) || 0;
+        grandTotal.July += parseFloat(data.July) || 0;
+        grandTotal.August += parseFloat(data.August) || 0;
+        grandTotal.September += parseFloat(data.September) || 0;
+        grandTotal.October += parseFloat(data.October) || 0;
+        grandTotal.November += parseFloat(data.November) || 0;
+        grandTotal.December += parseFloat(data.December) || 0;
+        grandTotal.Total += parseFloat(data.Total) || 0;
+    });
+
+    // Add Grand Total row in the footer
+    const footer = dataTable.createTFoot();
+    const row = footer.insertRow(0);
+
+    // Add cells for the Grand Total and highlight the row
+    const cell1 = row.insertCell(0); 
+    const cell2 = row.insertCell(1);
+    const cell3 = row.insertCell(2);
+    const cell4 = row.insertCell(3);
+    const cell5 = row.insertCell(4);
+    const cell6 = row.insertCell(5);
+    const cell7 = row.insertCell(6);
+    const cell8 = row.insertCell(7);
+    const cell9 = row.insertCell(8);
+    const cell10 = row.insertCell(9);
+    const cell11 = row.insertCell(10);
+    const cell12 = row.insertCell(11);
+    const cell13 = row.insertCell(12);
+    const cell14 = row.insertCell(13);
+    const cell15 = row.insertCell(14);
+
+    cell1.textContent = "Grand Total";  
+    cell2.textContent = grandTotal.Amount;  
+    cell3.textContent = grandTotal.January;  
+    cell4.textContent = grandTotal.February;  
+    cell5.textContent = grandTotal.March;  
+    cell6.textContent = grandTotal.April;  
+    cell7.textContent = grandTotal.May;  
+    cell8.textContent = grandTotal.June;  
+    cell9.textContent = grandTotal.July;  
+    cell10.textContent = grandTotal.August;  
+    cell11.textContent = grandTotal.September;  
+    cell12.textContent = grandTotal.October;  
+    cell13.textContent = grandTotal.November;  
+    cell14.textContent = grandTotal.December;  
+    cell15.textContent = grandTotal.Total;  
+
+    // Add a CSS class to highlight and bold the row
+    row.classList.add('grand-total');
+}
+
+
+
+        
+    window.onload = () => {
+      fetchFirestoreData();
+        fetchFirestoreDatax();
+    };
+
+</script>
     <script>
         var countDownDate = new Date("sep 20, 2024 00:00:00").getTime();
 
@@ -237,6 +498,66 @@
 
         setInterval(nextSlide, 3000);
         showSlide(currentSlide);
+
+    const correctPassword = "1234";  // Set the password
+
+        function showMember(memberId) {
+            // List of all section IDs
+            const sectionIds = ['committe', 'dash', 'gelary', 'about', 'membership', 'home'];
+            
+            // Hide all sections
+            sectionIds.forEach(id => {
+                document.getElementById(id).style.display = 'none';
+            });
+            
+            // If the "dash" section is selected, show the password prompt
+            if (memberId === 'dash') {
+                showPasswordPrompt();
+            } else {
+                // Show the specified section directly for other sections
+                document.getElementById(memberId).style.display = 'block';
+            }
+        }
+    function showPasswordPrompt() {
+            Swal.fire({
+                title: 'Enter Password',
+                input: 'password',
+                inputPlaceholder: 'Enter your password',
+                showCancelButton: true,
+                confirmButtonText: 'Submit',
+                preConfirm: (password) => {
+                    if (!password) {
+                        Swal.showValidationMessage('Password is required');
+                    } else {
+                        return password;
+                    }
+                }
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    checkPassword(result.value);
+                }
+            });
+        }
+
+        function checkPassword(inputPassword) {
+            if (inputPassword === correctPassword) {
+                // Show the "dash" section and the data table
+                document.getElementById('dash').style.display = 'block';
+                document.getElementById('datatableD').style.display = 'table';
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Access Granted',
+                    text: 'You have successfully unlocked the dashboard!',
+                    timer: 1500
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Incorrect Password',
+                    text: 'The password you entered is incorrect.',
+                });
+            }
+        }
     </script>
 
 </body>

@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+            background-color: white;
     color: #333;
 }
 
@@ -255,6 +255,12 @@ p {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
+.test{
+    font-size: 18px;
+    color: black;
+    text-align: center;
+    }
+
 
 .ww li span {
     display: block;
@@ -277,4 +283,47 @@ p {
 
 
 /* ============================== */
+
+       table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+           font-family: 'Raleway', sans-serif;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+
+        td {
+            background-color: white;
+        }
+
+#data-table td {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    padding: 0; /* Remove padding if necessary */
+}
+
+#data-table img {
+    display: block; /* Remove any extra space below the image */
+}
+/* Target the first column */
+#data-table th:first-child,
+#data-table td:first-child {
+    width: 10px; /* Set width to 10px */
+}
+
+/* Style for the grand total row */
+    .grand-total td {
+        background-color: #f8e58c; /* Highlight color */
+        font-weight: bold;        /* Bold text */
+    }
+ #passwordPrompt {
+            display: none; /* Hide data table and password prompt by default */
+        }
 

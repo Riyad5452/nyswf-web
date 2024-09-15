@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
             background-color: white;
@@ -222,7 +223,8 @@ footer {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: url(https://i.ibb.co.com/5sbqs0d/NYSWFBANER.jpg) no-repeat;
+    /* background-color: black; */
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcnNMJqq9lbEnJLj9CHNy2t8CebPZO5EV4Gg&s) no-repeat;
     background-size: cover;
 }
 
@@ -303,19 +305,21 @@ p {
             background-color: white;
         }
 
-#data-table td {
-    width: 50px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
-    padding: 0; /* Remove padding if necessary */
+#data-table img {
+    display: block;             /* Remove any extra space below the image */
+    width: 120px;               /* Increase the width of the image */
+    height: 120px;              /* Increase the height to match the width */
+    border-radius: 50%;         /* Ensures the image remains round */
+    object-fit: cover;          /* Ensures the image fills the circle without distortion */
+    margin: 0 auto;             /* Center the image in the table cell */
+    border: 4px solid #f0f0f0;  /* Thicker border for a more defined round shape */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow to emphasize the round effect */
 }
 
-#data-table img {
-    display: block; /* Remove any extra space below the image */
-}
-/* Target the first column */
-#data-table th:first-child,
-#data-table td:first-child {
-    width: 10px; /* Set width to 10px */
+#data-table td {
+    width: 50px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    padding: 0; /* Remove padding if necessary */
 }
 
 /* Style for the grand total row */
@@ -323,7 +327,206 @@ p {
         background-color: #f8e58c; /* Highlight color */
         font-weight: bold;        /* Bold text */
     }
- #passwordPrompt {
+ #passwordPrompt, #about ,#membership ,#gelary ,#committe, #dash {
             display: none; /* Hide data table and password prompt by default */
         }
 
+/* ================================ */
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the entire document */
+.constitution {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Heading styles */
+.constitution h1,.constitution  h2,.constitution  h3,.constitution  h4 {
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+.constitution h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.constitution h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 10px;
+}
+
+.constitution h3 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.constitution h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #17a2b8;
+}
+
+/* Paragraphs */
+.constitution p {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Section styling */
+.constitution section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Numbered list for constitutional sections */
+.constitution ol {
+  margin-left: 20px;
+  list-style: none;
+  counter-reset: section;
+}
+
+.constitution ol li {
+  margin-bottom: 15px;
+  counter-increment: section;
+  position: relative;
+  padding-left: 30px;
+}
+
+.constitution ol li::before {
+  content: counter(section) ". ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: #17a2b8;
+  font-weight: bold;
+}
+
+/* Bullet point lists */
+.constitution ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+.constitution ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.constitution ul li::before {
+  content: "➡️";
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+  color: #17a2b8;
+}
+
+/* Table styles for governance structure */
+.constitution table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.constitution table, th, td {
+  border: 1px solid #dee2e6;
+}
+
+.constitution th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+.constitution th {
+  background-color: #0056b3;
+  color: white;
+}
+
+.constitution td {
+  background-color: #f1f1f1;
+}
+
+/* Box for mission statement and objectives */
+.mission-box {
+  background-color: #e2f3f5;
+  padding: 20px;
+  border-left: 5px solid #17a2b8;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.mission-box h2 {
+  margin-bottom: 10px;
+  color: #17a2b8;
+}
+
+/* Advisor section */
+.advisor-box {
+  background-color: #f8d7da;
+  padding: 20px;
+  border-left: 5px solid #dc3545;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.advisor-box h2 {
+  margin-bottom: 10px;
+  color: #dc3545;
+}
+
+/* Buttons for interactive elements like form submission or approval */
+button {
+  background-color: #28a745;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
